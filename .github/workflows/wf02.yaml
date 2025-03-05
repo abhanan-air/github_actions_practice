@@ -1,0 +1,13 @@
+name: wf02
+on:
+    issues:
+        types: opened 
+
+jobs:
+    job01:
+        runs-on: ubuntu-latest
+        steps:
+            - name: output details 
+              run: echo "${{ toJSON(github) }}"
+
+
